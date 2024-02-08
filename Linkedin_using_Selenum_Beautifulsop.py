@@ -121,8 +121,7 @@ def execute(CHROME_DRIVER_PATH,EMAIL_ID_KEY,PASSWORD_KEY,Name):
         Linkedin Username and Password
         Name to search in linkedIn search bar
     """
-    #"C:/Users/LAPPY HUB/Downloads/chromedriver-win64/chromedriver-win64/chromedriver.exe"
-
+       
     # checks if the chrome driver path exists
     if not os.path.exists(CHROME_DRIVER_PATH):
         print('Executable file could not found in specified path')
@@ -143,8 +142,7 @@ def execute(CHROME_DRIVER_PATH,EMAIL_ID_KEY,PASSWORD_KEY,Name):
     return
 
 CHROME_DRIVER_PATH=input('Please Enter the chrome driver path : ')
-EMAIL_ID_KEY=input('Please Enter Username/Email_Id :') #"deepikasindagi789@gmail.com"
-PASSWORD_KEY=input('Please Enter Password :')#"Deepikas@2295"
-Name = input('Please Enter Name to search :')#'Pratik'
-
+EMAIL_ID_KEY=input('Please Enter Username/Email_Id :')
+PASSWORD_KEY=input('Please Enter Password :')
+Name = input('Please Enter Name to search :')
 execute(CHROME_DRIVER_PATH,EMAIL_ID_KEY,PASSWORD_KEY,Name)
